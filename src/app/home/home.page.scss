@@ -1,27 +1,51 @@
-#container {
+ion-content {
+  // Ajustado o caminho da imagem de fundo
+  --background: url("/assets/Background.png") no-repeat center center fixed;
+  --background-size: cover;
   text-align: center;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
-#container strong {
+ion-toolbar {
+  --background: url("/assets/Background-Header.png");
+  font-family: monospace;
+}
+
+img {
+  height: 30vh;
+  width: 30vh; // Adicionei width para manter o círculo perfeito
+  object-fit: cover; // Garante que a foto não estique
+  border-radius: 50%;
+  margin: 10px auto 0 auto;
+  display: block;
+  border: 3px solid rgba(49, 0, 163, 0.32);
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-family: monospace;
   font-size: 20px;
-  line-height: 26px;
+  font-weight: bold;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+div {
+  display: flex;
+  justify-content: space-around;
 }
 
-#container a {
-  text-decoration: none;
+div h4 {
+  font-size: 13px;
+}
+
+ion-button {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  --background: rgb(49, 0, 163);
 }
